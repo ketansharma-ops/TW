@@ -1,0 +1,150 @@
+
+\documentclass[12pt,a4paper]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{fontspec}
+\usepackage{xcolor}
+\usepackage{amsmath}
+\usepackage{makeidx}
+\usepackage{fancyhdr}
+\usepackage{setspace}
+\usepackage{url}
+
+\setmainfont{Times New Roman}
+\setsansfont{Arial}
+\setmonofont{Courier New}
+
+\setlength{\emergencystretch}{3em}
+
+\makeindex
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{Assignment 6}
+\fancyhead[C]{Document Structure}
+\fancyhead[R]{LaTeX}
+\fancyfoot[C]{\thepage}
+\setlength{\headheight}{15pt}
+
+\renewcommand{\thesection}{\Alph{section}}
+
+\begin{document}
+	
+	\pagecolor{yellow!10}
+	\color{black}
+	
+	\begin{center}
+		{\Huge \textbf{Assignment 6}}\\[0.5cm]
+		{\Large Document Structure}\\[0.5cm]
+	\end{center}
+	
+	\thispagestyle{empty}
+	
+	\section{Fonts and Background}
+	
+	This paragraph demonstrates the use of different fonts and background formatting.
+	
+	\begin{trivlist}
+		\item {\rmfamily This text is written using the serif font Times New Roman.}
+		\item {\sffamily This text is written using the sans-serif font Arial.}
+		\item {\ttfamily This text is written using the monospaced font Courier New.}
+	\end{trivlist}
+	
+	\index{background}
+	
+	\section{Spacing}
+	
+	This is the first line of the paragraph.
+	This is the second line of the same paragraph.
+	
+	\vspace{1cm}
+	
+	This paragraph begins after a vertical space of one centimetre.
+	
+	The word antidis-establishmentarianisms demonstrates manual hyphenation.
+	
+	The word antidisestablishmentarianisms demonstrates automatic hyphenation.
+	
+	\medskip
+	
+	LaTeX provides several commands for controlling the spacing between paragraphs and lines. These commands can be used to improve the overall appearance and readability of a document.
+	
+	\newpage
+	
+	\setcounter{section}{3}
+	
+	\section{Numbering}
+	
+	This section demonstrates custom section numbering using alphabets.
+	
+	The equation of an ellipse is:
+	
+	\begin{equation*}
+		\frac{x^2}{a^2}+\frac{y^2}{b^2}=1
+	\end{equation*}
+	
+	The equation of a circle is:
+	
+	\begin{equation}
+		x^2+y^2=1
+		\label{eq:circle}
+	\end{equation}
+	
+	Equation~\ref{eq:circle} represents a circle with unit radius.
+	
+	\section{Boxes and Lines}
+	
+	A savebox can store text and reuse it multiple times.
+	
+	\newsavebox{\mybox}
+	\savebox{\mybox}{This message is written in a savebox.}
+	
+	\noindent\usebox{\mybox}
+	
+	\noindent\usebox{\mybox}
+	
+	\noindent\usebox{\mybox}
+	
+	\vspace{0.5cm}
+	
+	The following message is placed inside a paragraph box of width 5 cm:
+	
+	\noindent
+	\parbox{5cm}{
+		This message is written inside a paragraph box. The width of this box is five centimetres.
+	}
+	
+	\vspace{0.5cm}
+	
+	Boxes are useful for highlighting text and controlling the layout of content in a document.
+	
+	\index{numbering}
+	\index{savebox}
+	
+	\newpage
+	
+	\section*{Index}
+	\addcontentsline{toc}{section}{Index}
+	\printindex
+	
+	\newpage
+	
+	\section*{References}
+	\addcontentsline{toc}{section}{References}
+	
+	\begin{thebibliography}{9}
+		
+		\bibitem{notso}
+		T. Oetiker,
+		\textit{The Not So Short Introduction to LaTeX 2e},
+		CTAN, 2021.
+		
+		\bibitem{overleaf}
+		Overleaf,
+		\textit{Bibliography Management with BibTeX}.
+		Available at:
+		\url{https://www.overleaf.com/learn/latex/Bibliography_management_with_bibtex}
+		
+	\end{thebibliography}
+	
+\end{document}

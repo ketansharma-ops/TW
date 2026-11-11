@@ -1,0 +1,14 @@
+\begin{thebibliography}{1}
+
+\bibitem{notso}
+Tobias Oetiker.
+\newblock {\em The Not So Short Introduction to LaTeX 2e}.
+\newblock CTAN, 2021.
+
+\bibitem{overleaf}
+{Overleaf}.
+\newblock Bibliography management with bibtex.
+\newblock
+  \url{https://www.overleaf.com/learn/latex/Bibliography_management_with_bibtex}.
+
+\end{thebibliography}
