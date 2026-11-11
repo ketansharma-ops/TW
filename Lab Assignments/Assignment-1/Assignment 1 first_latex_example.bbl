@@ -1,0 +1,16 @@
+\begin{thebibliography}{2}
+\providecommand{\natexlab}[1]{#1}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
+  \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url}\fi
+
+\bibitem[{\textit{Einstein}(1905)}]{einstein1905}
+Einstein, A., Ist die trägheit eines körpers von seinem energieinhalt
+  abhängig?, \textit{Annalen der Physik}, \textit{323}(13), 639--641, 1905.
+
+\bibitem[{\textit{Schrödinger}(1926)}]{schrodinger1926}
+Schrödinger, E., Quantisierung als eigenwertproblem, \textit{Annalen der
+  Physik}, \textit{384}(4), 361--376, 1926.
+
+\end{thebibliography}

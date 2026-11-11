@@ -1,0 +1,111 @@
+
+\documentclass[12pt,a4paper]{article}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{natbib}
+
+\newtheorem{theorem}{Theorem}[section]
+
+\begin{document}
+	
+	\title{My First LaTeX Document}
+	\author{Your Name}
+	\date{\today}
+	
+	\maketitle
+	
+	\tableofcontents
+	
+	\newpage
+	
+	\section{Introduction}
+	
+	This is my first LaTeX document.
+	
+	Words are separated by one or more spaces. Paragraphs are separated by one or more blank lines.
+	
+	\section{Background}
+	
+	In Section \ref{intro}, we discussed the introduction.
+	
+	Double quotes are typed like this: ``quoted text''.
+	
+	Single quotes are typed like this: `single-quoted text'.
+	
+	\textbf{Long dashes} are typed as three dash characters---like this.
+	
+	Italic text is typed like this: \textit{This is italic text}.
+	
+	Bold text is typed like this: \textbf{This is bold text}.
+	
+	\subsection{Mathematical Expressions}
+	
+	{\large $\beta = a^2 + b\times c + 2$}
+	
+	An example of a mathematical expression is $a^2+b^2=c^2$.
+	
+	\subsection{Numbered List}
+	
+	\begin{enumerate}
+		\item First item
+		\item Second item
+		\item Third item
+	\end{enumerate}
+	
+	\subsection{Theorem}
+	
+	\begin{theorem}
+		There are infinitely many prime numbers.
+	\end{theorem}
+	
+	As stated in Theorem \ref{T1}, there are infinitely many prime numbers.
+	
+	\section{A Warning or Two}
+	
+	If you get too much space after a mid-sentence period---abbreviations like etc.\ are the common culprits---then type a backslash followed by a space after the period.
+	
+	\noindent Remember, special characters such as dollar sign and backslash must be used carefully in LaTeX.
+	
+	The following characters are printed by typing a backslash in front of them:
+	
+	\$ \quad \& \quad \# \quad \% \quad \_ \quad \{ \quad \}
+	
+	\section{Science!}
+	\label{intro}
+	
+	Einstein's famous mass-energy equivalence equation is:
+	
+	$E=mc^2$
+	
+	This equation describes the relationship between mass and energy.
+	
+	Einstein introduced this relationship in his 1905 research paper \citep{einstein1905}.
+	
+	\subsection{Schrödinger Equation}
+	
+	The time-dependent Schrödinger equation is a fundamental equation of quantum mechanics.
+	
+	It is given by:
+	
+	\begin{equation}
+		i\hbar\frac{\partial\Psi(\mathbf{r},t)}{\partial t}
+		=
+		\left[
+		-\frac{\hbar^2}{2\mu}\nabla^2
+		+V(\mathbf{r},t)
+		\right]\Psi(\mathbf{r},t)
+		\label{eq:schrodinger}
+	\end{equation}
+	
+	As shown in Equation \ref{eq:schrodinger}, the Schrödinger equation describes the evolution of the quantum wave function over time.
+	
+	Schrödinger introduced this equation in his 1926 research paper \citep{schrodinger1926}.
+	
+	\newpage
+	
+	\bibliographystyle{agu}
+	\bibliography{physics}
+	
+\end{document}
