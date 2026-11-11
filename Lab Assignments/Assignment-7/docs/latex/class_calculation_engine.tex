@@ -1,0 +1,88 @@
+\doxysection{Calculation\+Engine Class Reference}
+\hypertarget{class_calculation_engine}{}\label{class_calculation_engine}\index{CalculationEngine@{CalculationEngine}}
+
+
+Performs mathematical calculations.  
+
+
+
+
+{\ttfamily \+\#include $<$Calculation\+Engine.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_calculation_engine_a4d772264693d96efcfa89c12e585e455}{Calculation\+Engine}} (\doxymbox{\hyperlink{class_logger}{Logger}} \&log)
+\begin{DoxyCompactList}\small\item\em Constructs a \doxylink{class_calculation_engine}{Calculation\+Engine} object. \end{DoxyCompactList}\item 
+double \doxymbox{\hyperlink{class_calculation_engine_af96aad4a7a10f6bd17dc17d1f4df1c51}{power}} (double base, int exponent)
+\begin{DoxyCompactList}\small\item\em Calculates the power of a number. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Performs mathematical calculations. 
+
+The \doxylink{class_calculation_engine}{Calculation\+Engine} class provides mathematical operations and uses the \doxylink{class_logger}{Logger} class to display calculation information.
+
+Currently, it supports power calculation using a base and an integer exponent. 
+
+\label{class_calculation_engine_doc-constructors}
+\Hypertarget{class_calculation_engine_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_calculation_engine_a4d772264693d96efcfa89c12e585e455}\index{CalculationEngine@{CalculationEngine}!CalculationEngine@{CalculationEngine}}
+\index{CalculationEngine@{CalculationEngine}!CalculationEngine@{CalculationEngine}}
+\doxysubsubsection{\texorpdfstring{CalculationEngine()}{CalculationEngine()}}
+{\footnotesize\ttfamily \label{class_calculation_engine_a4d772264693d96efcfa89c12e585e455} 
+Calculation\+Engine::\+\+Calculation\+Engine (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_logger}{Logger}} \&}]{log}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructs a \doxylink{class_calculation_engine}{Calculation\+Engine} object. 
+
+Initializes the calculation engine with a \doxylink{class_logger}{Logger} object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em log} & Reference to the \doxylink{class_logger}{Logger} object. \\
+\hline
+\end{DoxyParams}
+
+
+\label{class_calculation_engine_doc-func-members}
+\Hypertarget{class_calculation_engine_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_calculation_engine_af96aad4a7a10f6bd17dc17d1f4df1c51}\index{CalculationEngine@{CalculationEngine}!power@{power}}
+\index{power@{power}!CalculationEngine@{CalculationEngine}}
+\doxysubsubsection{\texorpdfstring{power()}{power()}}
+{\footnotesize\ttfamily \label{class_calculation_engine_af96aad4a7a10f6bd17dc17d1f4df1c51} 
+double Calculation\+Engine::\+power (\begin{DoxyParamCaption}\item[{double}]{base}{, }\item[{int}]{exponent}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Calculates the power of a number. 
+
+Calculates base raised to the given exponent. Supports both positive and negative integer exponents.
+
+
+\begin{DoxyParams}{Parameters}
+{\em base} & The base value. \\
+\hline
+{\em exponent} & The integer exponent.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The calculated power result.
+\end{DoxyReturn}
+\begin{DoxyRefDesc}{Todo}
+\item[\doxymbox{\hyperlink{todo__todo000001}{Todo}}]Extend this function to support additional mathematical operations and optimized algorithms.\end{DoxyRefDesc}
+
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em invalid\+\_\+argument} & If base is zero and exponent is negative. \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{_calculation_engine_8h}{Calculation\+Engine.\+h}}\end{DoxyCompactItemize}
