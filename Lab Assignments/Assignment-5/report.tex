@@ -1,0 +1,173 @@
+
+\documentclass[12pt,a4paper]{report}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{xcolor}
+\usepackage{sectsty}
+\usepackage{fancyhdr}
+\usepackage{setspace}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\chapterfont{\color{red}\bfseries\Huge}
+\sectionfont{\color{magenta}\itshape\Large}
+\subsectionfont{\color{orange}\bfseries}
+
+\setstretch{1.3}
+
+\pagestyle{fancy}
+\fancyhf{}
+
+\fancyhead[L]{Ketan Sharma}
+\fancyhead[C]{Technical Writing Lab}
+\fancyhead[R]{\today}
+
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\setlength{\headheight}{15pt}
+
+\begin{document}
+	
+	\begin{titlepage}
+		\thispagestyle{empty}
+		
+		\begin{center}
+			
+			\vspace*{2cm}
+			
+			{\Huge\bfseries Introduction to LaTeX}
+			
+			\vspace{2cm}
+			
+			{\Large Ketan Sharma}
+			
+			\vspace{0.5cm}
+			
+			\textbf{ID:} 2025UCP1398
+			
+			\vspace{1.5cm}
+			
+			\textbf{Course:} Technical Writing Lab
+			
+			\vspace{0.5cm}
+			
+			\textbf{Course Instructor:} Neeta Nain Ma'am
+			
+			\vfill
+			
+			\textbf{Date:} \today
+			
+		\end{center}
+		
+	\end{titlepage}
+	
+	\pagestyle{fancy}
+	
+	\begin{abstract}
+		
+		This document provides an introduction to LaTeX, a document preparation system widely used for creating academic papers, technical reports, research articles and presentations. It explains the basic structure of a LaTeX document, formatting of chapters and sections, mathematical expressions, and the use of LaTeX for professional document preparation. It also demonstrates how to create a structured report with customized headings and page headers.
+		
+	\end{abstract}
+	
+	\tableofcontents
+	
+	\chapter{Introduction}
+	
+	\section{Overview of LaTeX}
+	
+	LaTeX is a document preparation system based on the TeX typesetting system. It is commonly used in academic and technical fields because it provides precise control over document formatting.
+	
+	\section{Importance of LaTeX}
+	
+	LaTeX is useful for preparing documents that contain complex mathematical equations, tables, figures, references and structured content.
+	
+	\subsection{Applications of LaTeX}
+	
+	Some common applications include:
+	
+	\begin{itemize}
+		\item Academic research papers
+		\item Technical reports
+		\item Project documentation
+		\item Books and presentations
+		\item Mathematical and scientific documents
+	\end{itemize}
+	
+	\chapter{Basic Structure of LaTeX}
+	
+	\section{Document Structure}
+	
+	A basic LaTeX document consists of two main parts: the preamble and the document environment.
+	
+	\begin{verbatim}
+		\documentclass{article}
+		
+		\begin{document}
+			
+			Hello World!
+			
+		\end{document}
+	\end{verbatim}
+	
+	The preamble contains document settings and packages, while the document environment contains the actual content.
+	
+	\section{Formatting Text}
+	
+	LaTeX provides several commands for formatting text.
+	
+	\subsection{Text Formatting Examples}
+	
+	\begin{itemize}
+		\item \textbf{Bold Text}
+		\item \textit{Italic Text}
+		\item \underline{Underlined Text}
+	\end{itemize}
+	
+	\chapter{Mathematics in LaTeX}
+	
+	\section{Mathematical Expressions}
+	
+	LaTeX provides powerful mathematical typesetting capabilities.
+	
+	An example of an inline equation is $E=mc^2$.
+	
+	A displayed mathematical equation is:
+	
+	\[
+	a^2+b^2=c^2
+	\]
+	
+	\section{Fractions and Summations}
+	
+	A fraction can be written as:
+	
+	\[
+	\frac{a+b}{c+d}
+	\]
+	
+	A summation can be written as:
+	
+	\[
+	\sum_{i=1}^{n} i = \frac{n(n+1)}{2}
+	\]
+	
+	\subsection{Matrices}
+	
+	Matrices can also be created using LaTeX:
+	
+	\[
+	A=
+	\begin{bmatrix}
+		1 & 2\\
+		3 & 4
+	\end{bmatrix}
+	\]
+	
+	\chapter{Conclusion}
+	
+	LaTeX is a powerful tool for preparing professional documents, academic reports and presentations. Its structured approach makes it suitable for handling complex mathematical expressions, tables, references and formatting requirements.
+	
+	Learning LaTeX helps students create well-organized and consistent technical documents.
+	
+\end{document}
