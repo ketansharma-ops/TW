@@ -1,0 +1,200 @@
+\documentclass[12pt,a4paper]{report}
+
+% ---------------- Packages ----------------
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{hyperref}
+\usepackage{geometry}
+\usepackage{setspace}
+\usepackage{caption}
+\usepackage{float}
+
+\geometry{margin=1in}
+\onehalfspacing
+
+% ---------------- Document ----------------
+\begin{document}
+	
+	%%%%%%%%%%%%%%%%%%%% Title Page %%%%%%%%%%%%%%%%%%%%
+	
+	\begin{titlepage}
+		\centering
+		
+		{\Large MALAVIYA NATIONAL INSTITUTE OF TECHNOLOGY}\\[0.4cm]
+		{\large Department of Computer Science and Engineering}\\[2cm]
+		
+		{\Huge \textbf{AI-Based Attendance Management System}}\\[1cm]
+		
+		{\Large Project Report}\\[2cm]
+		
+		Submitted By\\[0.3cm]
+		
+		\textbf{Ketan Sharma}\\
+		B.Tech CSE\\
+		Roll No.: 2025UCP1234\\[1cm]
+		
+		Submitted To\\[0.3cm]
+		
+		Dr. ABC XYZ\\
+		Assistant Professor\\[2cm]
+		
+		\includegraphics[width=0.25\textwidth]{1.jpeg}\\[1cm]
+		
+		September 2026
+		
+	\end{titlepage}
+	
+	%%%%%%%%%%%%%%%%%%%% Certificate %%%%%%%%%%%%%%%%%%%%
+	
+	\chapter*{Certificate}
+	
+	This is to certify that this project titled
+	\textbf{AI-Based Attendance Management System}
+	has been completed by
+	\textbf{Ketan Sharma}
+	under my supervision.
+	
+	\vspace{2cm}
+	
+	Guide Signature
+	
+	%%%%%%%%%%%%%%%%%%%% Abstract %%%%%%%%%%%%%%%%%%%%
+	
+	\chapter*{Abstract}
+	
+	The AI-Based Attendance Management System uses facial recognition and machine learning techniques to automate classroom attendance. The system captures student faces, recognizes identities, and records attendance automatically. This reduces manual effort and improves accuracy.
+	
+	%%%%%%%%%%%%%%%%%%%% TOC %%%%%%%%%%%%%%%%%%%%
+	
+	\tableofcontents
+	\listoffigures
+	\listoftables
+	
+	%%%%%%%%%%%%%%%%%%%% Introduction %%%%%%%%%%%%%%%%%%%%
+	
+	\chapter{Introduction}
+	
+	Attendance monitoring is an essential activity in educational institutions. Traditional attendance systems are time-consuming and prone to human error. Artificial Intelligence provides an automated solution using computer vision.
+	
+	\section{Problem Statement}
+	
+	Manual attendance:
+	\begin{itemize}
+		\item Takes time.
+		\item Can contain errors.
+		\item Allows proxy attendance.
+	\end{itemize}
+	
+	%%%%%%%%%%%%%%%%%%%% Objectives %%%%%%%%%%%%%%%%%%%%
+	
+	\chapter{Objectives}
+	
+	The objectives of this project are:
+	
+	\begin{enumerate}
+		\item Automate attendance using facial recognition.
+		\item Reduce proxy attendance.
+		\item Generate attendance reports automatically.
+		\item Store records securely in a database.
+	\end{enumerate}
+	
+	%%%%%%%%%%%%%%%%%%%% Literature Review %%%%%%%%%%%%%%%%%%%%
+	
+	\chapter{Literature Review}
+	
+	Several AI-based attendance systems have been proposed using:
+	
+	\begin{itemize}
+		\item OpenCV
+		\item Haar Cascade
+		\item FaceNet
+		\item Deep Learning CNN models
+	\end{itemize}
+	
+	%%%%%%%%%%%%%%%%%%%% Methodology %%%%%%%%%%%%%%%%%%%%
+	
+	\chapter{Methodology}
+	
+	\section{System Architecture}
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.8\textwidth]{1.jpeg}
+		\caption{System Architecture}
+		\label{fig:architecture}
+	\end{figure}
+	
+	\section{Workflow}
+	
+	\begin{enumerate}
+		\item Capture Image.
+		\item Detect Face.
+		\item Extract Features.
+		\item Compare with Database.
+		\item Mark Attendance.
+	\end{enumerate}
+	
+	%%%%%%%%%%%%%%%%%%%% Equation %%%%%%%%%%%%%%%%%%%%
+	
+	\section{Recognition Accuracy}
+	
+	Recognition accuracy is calculated as
+	
+	\[
+	Accuracy = \frac{Correct\ Predictions}{Total\ Predictions}\times100
+	\]
+	
+	%%%%%%%%%%%%%%%%%%%% Results %%%%%%%%%%%%%%%%%%%%
+	
+	\chapter{Results}
+	
+	\section{Attendance Summary}
+	
+	\begin{table}[H]
+		\centering
+		\caption{Attendance Records}
+		\begin{tabular}{lcc}
+			\toprule
+			Student & Present & Attendance (\%)\\
+			\midrule
+			Ketan Sharma & 28 & 93.3\\
+			Rahul Kumar & 27 & 90.0\\
+			Aman Singh & 30 & 100\\
+			\bottomrule
+		\end{tabular}
+		\label{tab:attendance}
+	\end{table}
+	
+	%%%%%%%%%%%%%%%%%%%% Discussion %%%%%%%%%%%%%%%%%%%%
+	
+	\chapter{Discussion}
+	
+	The proposed system successfully recognized registered students with high accuracy. Performance depends upon lighting conditions and camera quality.
+	
+	%%%%%%%%%%%%%%%%%%%% Conclusion %%%%%%%%%%%%%%%%%%%%
+	
+	\chapter{Conclusion}
+	
+	The AI-Based Attendance Management System provides an efficient and reliable attendance solution using computer vision. Future work includes mobile integration and cloud synchronization.
+	
+	%%%%%%%%%%%%%%%%%%%% Bibliography %%%%%%%%%%%%%%%%%%%%
+	
+	\begin{thebibliography}{99}
+		
+		\bibitem{opencv}
+		OpenCV Documentation.
+		
+		\bibitem{lamport}
+		Leslie Lamport,
+		\textit{LaTeX: A Document Preparation System},
+		Addison-Wesley, 1994.
+		
+		\bibitem{facenet}
+		Florian Schroff et al.,
+		FaceNet: A Unified Embedding for Face Recognition.
+		
+	\end{thebibliography}
+	
+\end{document}

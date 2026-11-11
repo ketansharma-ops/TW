@@ -1,0 +1,46 @@
+\documentclass[12pt]{article}
+
+\usepackage[]{fancyhdr}
+\usepackage[]{geometry}
+\usepackage[]{sectsty}
+\usepackage[]{xcolor}
+\usepackage{fontspec}
+
+\geometry{margin=1in}
+\subsectionfont{\itshape\color{red}}
+\sectionfont{\Large\bfseries\color{blue}}
+
+
+\setmainfont{Georgia}
+\setsansfont{Arial}
+\setmonofont{Courier New}
+
+\title{My Article}
+\author{Ketan Sharma}
+\date{\today}
+
+\pagecolor{yellow!10}
+
+\pagestyle{fancy}
+\fancyhf{}
+%\fancyhead[R]{center}
+%\fancyfoot[c]{footer}
+\begin{document}
+	\maketitle
+	\begin{abstract}
+		This document introduces the fundamentals of
+		\LaTeX, including document styles, classes, title
+		pages, and abstract formatting. Readers will
+		learn to create professional-quality documents
+		efficiently.
+	\end{abstract}
+	\pagebreak
+	\section{This is a Section}
+	\noindent
+	\underline{\textbf{\textit{During}}} the \emph{1960s}, many large software development efforts encountered severe difficulties.Software schedules were
+	typically late, costs greatly exceeded budgets, and the finished products were unreliable.
+	\subsection{this is a subsection}
+	\noindent
+	\underline{\textbf{\textit{People}}} began to realize that software development was a
+	far more complex activity than they had imagined.
+\end{document}

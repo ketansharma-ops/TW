@@ -1,0 +1,123 @@
+\documentclass[12pt,a4paper]{report}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{xcolor}
+\usepackage{sectsty}
+\usepackage{fancyhdr}
+
+% Chapter formatting
+\chapterfont{\color{red}\bfseries\Huge}
+
+% Section formatting
+\sectionfont{\color{magenta}\itshape\Large}
+
+% Subsection formatting
+\subsectionfont{\color{orange}}
+
+% Header and footer
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{Ketan Sharma}
+\fancyhead[C]{Introduction to LaTeX}
+\fancyhead[R]{\today}
+\fancyfoot[C]{\thepage}
+
+\begin{document}
+	
+	% Title page
+	\begin{titlepage}
+		\centering
+		
+		\vspace*{2cm}
+		
+		{\Huge\bfseries Introduction to LaTeX\par}
+		
+		\vspace{1.5cm}
+		
+		{\Large Ketan Sharma\par}
+		
+		\vspace{0.5cm}
+		
+		$ID: YOUR_ID$
+		
+		\vspace{1cm}
+		
+		Course: LaTeX
+		
+		\vspace{0.5cm}
+		
+		Course Instructor: Instructor Name
+		
+		\vfill
+		
+		{\large \today\par}
+		
+	\end{titlepage}
+	
+	% No header/footer on first page after title page
+	\thispagestyle{empty}
+	
+	\begin{abstract}
+		This document provides a brief introduction to LaTeX and demonstrates
+		the use of different document formatting features. It covers title pages,
+		abstracts, chapters, sections, subsections, colors, headers, footers,
+		and page formatting.
+	\end{abstract}
+	
+	\chapter{Introduction}
+	
+	LaTeX is a document preparation system commonly used for writing
+	technical and scientific documents. It provides powerful tools for
+	formatting text, mathematical equations, tables, figures, and references.
+	
+	\section{What is LaTeX}
+	
+	LaTeX is based on the TeX typesetting system. Instead of manually
+	formatting every part of a document, the user writes commands that
+	describe how the document should be structured.
+	
+	\subsection{Advantages of LaTeX}
+	
+	Some advantages of LaTeX are its professional typesetting, excellent
+	mathematical support, automatic numbering, and easy document
+	organization.
+	
+	\chapter{Document Structure}
+	
+	A LaTeX document is divided into different structural components.
+	The report class supports chapters, sections, and subsections.
+	
+	\section{Chapters}
+	
+	Chapters are the major divisions of a report document. They are created
+	using the \texttt{\textbackslash chapter} command.
+	
+	\subsection{Sections and Subsections}
+	
+	Sections divide chapters into smaller topics, while subsections provide
+	further organization within a section.
+	
+	\chapter{Formatting in LaTeX}
+	
+	LaTeX allows users to customize the appearance of different parts of
+	a document.
+	
+	\section{Colors and Fonts}
+	
+	Packages such as \texttt{xcolor} and \texttt{sectsty} can be used to
+	change the colors, sizes, and styles of headings.
+	
+	\subsection{Headers and Footers}
+	
+	The \texttt{fancyhdr} package can be used to create customized headers
+	and footers. In this document, the header contains the author's name,
+	course title, and current date.
+	
+	\chapter{Conclusion}
+	
+	LaTeX is a useful tool for creating well-structured and professionally
+	formatted documents. Its support for chapters, sections, mathematical
+	expressions, and customizable formatting makes it suitable for academic
+	and technical work.
+	
+\end{document}

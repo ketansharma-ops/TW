@@ -1,0 +1,196 @@
+\documentclass[]{beamer}
+
+\usetheme[]{Madrid}
+\usefonttheme{professionalfonts}
+
+\usepackage{multirow}
+\usepackage[table]{xcolor}
+\usepackage[]{graphicx}
+
+\definecolor[]{mycolor}{RGB}{165,111,78}
+
+\title{{\textbf{My Beamer Presentation}}}
+\author{{\textbf{Ketan Sharma}}}
+\date[]{\today}
+
+\begin{document}
+	%Title Slide
+	\begin{frame}
+		\titlepage
+	\end{frame}	
+	%Slide 2
+	\begin{frame}
+	\frametitle{Abstract}
+		\begin{abstract}
+			This document introduces the fundamentals of
+			LaTeX, including document styles, classes, title
+			pages, and abstract formatting. Readers will
+			learn to create professional-quality documents
+			efficiently.
+		\end{abstract}
+	\end{frame}
+	%Slide 3
+	\begin{frame}
+		\frametitle{\large{\textbf{Points}}}
+		\framesubtitle{Part 1}
+		\begin{itemize}
+			\item Point 1 \ref{image}
+			\item Point 2 \pageref{tables}
+			\item Point 3
+		\end{itemize}
+	\end{frame}
+	%slide 4
+	\begin{frame}
+		\frametitle{\large{\textbf{Points}}}
+		\framesubtitle{Part 2}
+		\begin{enumerate}
+			\item Point 1
+			\item Point 2
+			\item Point 3
+		\end{enumerate}
+	\end{frame}
+	%slide 5
+	\begin{frame}{Tables}{Part1: Basics}
+		\centering
+		\begin{tabular}{||l|c|r||}
+			\hline
+			Name&Subject&Grade\\
+			\hline 
+			\hline
+			Ketan & DSA &AA\\
+			\cline{2-3}
+			Rahul & DSA &AB\\
+			\hline
+		\end{tabular}	
+	\end{frame}
+	%slide 6
+	\begin{frame}{Tables}{Part 2: MultiColumn}
+		\centering
+		\begin{table}
+			\label{tables}
+			\begin{tabular}{||l|c|r||}
+				\hline
+				Name&\multicolumn{2}{|c||}{Subject \& Grade}  \\
+				\hline 
+				\hline
+				Ketan &\multicolumn{2}{|c||}{DSA \quad\quad\quad\quad AA}\\
+				\cline{2-3}
+				Rahul & DSA &AB\\
+				\hline
+			\end{tabular}
+		\end{table}
+	\end{frame}
+	%slide 7
+	\begin{frame}{Tables}{Part 3: practice}
+		\centering
+		\begin{tabular}{||l|c|r||}
+			\hline
+			Name&\multicolumn{2}{|c||}{Subject \& Grade}  \\
+			\hline 
+			\hline
+			\multirow{2}{*}{Person}
+			&\multicolumn{2}{|c||}{DSA \quad\quad\quad\quad AA}\\
+			\cline{2-3}
+			& DSA &AB\\
+			\hline
+		\end{tabular}
+	\end{frame}
+	%slide 8
+	\begin{frame}{Tables}{Part 4: Colors}
+		\centering
+		\begin{tabular}{||>{\columncolor{red!30}}l|c|r||}
+			\hline
+			Name&\multicolumn{2}{|c||}{Subject \& Grade}  \\
+			\hline 
+			\hline
+			\rowcolor{yellow!30}
+			\multirow{2}{*}{Person}
+			&\multicolumn{2}{|c||}{DSA \quad\quad\quad\quad AA}\\
+			\cline{2-3}
+			& \cellcolor{cyan!30}DSA &AB\\
+			\hline
+		\end{tabular}
+	\end{frame}
+	%slide 9
+	\begin{frame}{Figures}{Part 1: Normal}
+		\begin{figure}[!h]
+			\includegraphics[width=0.3\textwidth,angle=90]{1.jpeg}
+			\caption[]{Image 1}
+		\end{figure}
+	\end{frame}
+	%slide 10
+	\begin{frame}{Figures}{Part 2: MiniPage}
+		\begin{minipage}{0.49\textwidth}
+			\begin{figure}
+				\centering
+				\includegraphics[width=0.5\textwidth,angle=90]{1.jpeg}
+				\caption[]{Image 2}
+			\end{figure}
+		\end{minipage}
+		\hfill
+		\begin{minipage}{0.5\textwidth}
+			\begin{figure}
+				\centering
+				\includegraphics[width=0.5\textwidth,angle=90]{1.jpeg}
+				\caption[]{Image 2}
+				\label{image}
+			\end{figure}
+		\end{minipage}
+	\end{frame}
+	%slide 11
+	\begin{frame}{Bibliography}{Part 1:using Bibliography environment}
+		this has a reference to bibliography\cite{key1}.
+		\begin{thebibliography}{99}
+			\bibitem{key1}
+			Ketan Sharma,
+			latex,
+			2026,2027
+		\end{thebibliography}
+	\end{frame}
+	%slide 12
+	\begin{frame}{Bibliography}{Part 2:using Bibliography File}
+		this has a reference to bibliography\cite{key2}.
+		\bibliography{biblio.bib}
+		\bibliographystyle{plain}
+	\end{frame}
+	%slide 13
+	\begin{frame}{Text}{Part 1: Color}
+		\textcolor{red!50!green!50!blue!50}{Lorem Ipsum is simply dummy text of the printing and typesetting industry.} \\Lorem Ipsum has been the industry's standard dummy text ever since 1966,\ when designers at Letraset and James Mosley, the librarian at St Bride Printing \colorbox{orange!50}{Library in London}, \fcolorbox{blue}{magenta!10}{took a 1914} Cicero translation and scrambled it to make dummy text for Letraset's Body Type sheets. It has survived not only many decades, but also the leap into electronic typesetting, remaining essentially unchanged. \textcolor{mycolor}{It was popularised thanks to these sheets and more recently with desktop publishing software like Aldus PageMaker and Microsoft Word including versions of Lorem Ipsum.}
+	\end{frame}
+	%slide 14
+	\begin{frame}{Picture}{Part 1:Basics}
+		\centering
+		\setlength{\unitlength}{1cm}
+		\begin{picture}(4,2)
+			\put(0,0){\vector(1,0){4}}
+			\put(0,0){\vector(0,1){2}}
+			\put(2,1){\circle{1}}
+			\put(2,1){\makebox(0,0)[b]{(2,1)}}
+		\end{picture}
+	\end{frame}
+	%slide 15
+	\begin{frame}{Picture}{Part 2:Lines \& Arrows}
+		\centering
+		\setlength{\unitlength}{1cm}
+		\begin{picture}(4,2)
+			\put(0,0){\vector(1,0){4}}
+			\put(0,0){\vector(0,1){2}}
+			\put(1,1){\line(1,1){1}}
+			\put(1,1){\vector(1,-1){1}}
+			\put(1,1){\makebox(1,1){(1,1)}}
+		\end{picture}
+	\end{frame}
+	%slide 16
+	\begin{frame}{Picture}{Part 3:Shapes}
+		\centering
+		\setlength{\unitlength}{1cm}
+		\begin{picture}(4,2)
+			\put(0,0){\vector(1,0){4}}
+			\put(0,0){\vector(0,1){2}}
+			\put(1,1){\circle*{1}}
+			\put(1,1){\circle{1.5}}
+			\put(1,1){\oval(1,2)}
+			\put(4,2){\framebox(1,1)[c,b]{Rect}}
+		\end{picture}
+	\end{frame}
+\end{document}

@@ -1,0 +1,125 @@
+\documentclass[]{article}
+\usepackage[]{amsmath,amssymb}
+\usepackage[]{multirow}
+\usepackage{colortbl}
+\usepackage[table]{xcolor}
+\begin{document}
+\title{Assignment 3}
+\author{Ketan Sharma}
+\date{\today}
+\maketitle
+\textbf{Que 1}  Write LaTeX code to produce the following expression:
+\[
+	\overbrace{a+b+c}^{First Group}+\underbrace{x+y+z}_{Second Group}=\overbrace{\underbrace{a+b}_{Sum 1}+c}^{Total}
+\]
+\textbf{Que 2} Create the following array using the array environment:
+	\[
+		A=\left[
+			\begin{array}{c|ccc}
+				 &b&c&d\\ \hline
+				a&b&c&d\\
+				a&b&c&d\\
+				a&b&c&d
+			\end{array}
+		\right]
+	\]
+\textbf{Que 3} Write the following piecewise function using the cases environment:	
+	\[
+		f(x)=\left\{
+		\begin{array}{ll}
+			x^2+2x+1,&x<0,\\
+			\sqrt{x}+1,&0\leq x<4,\\
+			\frac{x^2-1}{x-1},&x\geq4	
+		\end{array}
+		\right.
+	\]
+\textbf{Que 4}Typeset the following matrix and label its different sections using :
+\[
+\left[
+\begin{array}{ccccc}
+	\multicolumn{3}{c}{\overbrace{\phantom{a_{11}\quad a_{12}\quad a_{13}}}^{\text{Column Group 1}}}
+	&
+	\multicolumn{2}{c}{\overbrace{\phantom{a_{14}\quad a_{15}}}^{\text{Column Group 2}}}
+	\\[6pt]
+	a_{11} & a_{12} & a_{13} & a_{14} & a_{15}\\
+	a_{21} & a_{22} & a_{23} & a_{24} & a_{25}\\
+	a_{31} & a_{32} & a_{33} & a_{34} & a_{35}
+\end{array}
+\right]
+\]
+\textbf{Que 7} Create the following table.
+\begin{center}
+	\begin{tabular}{|c|c|c|}
+		\hline
+		\multicolumn{3}{|c|}{Academic Performance} \\ \hline
+			a&b&c\\
+			1&2&3\\
+			1&2&3\\ \hline
+	\end{tabular}
+\end{center}
+\textbf{Que 8}Create the following table.
+\begin{center}
+	\begin{tabular}{|c|l|c|c|}
+		\hline
+		Department&Course&Credits&Grade\\
+		\hline
+		\multirow{3}{*}{CSE}
+		&Data Structures & 4&A+\\
+		&Machine Learning&4&A+\\
+		&Operating Systems&3&B+\\ \hline
+		\multirow{2}{*}{ECE}
+		&Digital Electronics &4&A\\
+		&Signals&3&B+\\ \hline
+	\end{tabular}
+\end{center}
+\textbf{Que 9}Create the following scientific table.
+\textbf{Que 9} Create the following scientific table.
+\begin{center}
+	\begin{tabular}{|c|l|c|c|}
+		\hline
+		\rowcolor{blue}
+		Department&Course&Credits&Grade\\
+		\hline
+		
+		\cellcolor{white}
+		\multirow{3}{*}{CSE}
+		&Data Structures & 4&A+\\
+		
+		\rowcolor{cyan}
+		&Machine Learning&4&A+\\
+		
+		&Operating Systems&3&B+\\
+		\hline
+		
+		\cellcolor{white}
+		\multirow{2}{*}{ECE}
+		&Digital Electronics &4&A\\
+		
+		\rowcolor{cyan}
+		&Signals&3&B+\\
+		\hline
+	\end{tabular}
+\end{center}
+\noindent
+\textbf{Que 10} Create a student-performance table.
+
+\begin{center}
+	\begin{tabular}{|c|c|c|c|}
+		\hline
+		\rowcolor{blue}
+		Student & Mathematics & Physics & Computer Science\\
+		\hline
+		
+		Amit & \cellcolor{green!20}92 & \cellcolor{green!20}81 & \cellcolor{green!20}95\\
+		\hline
+		Neha & \cellcolor{red!20}72 & \cellcolor{yellow!30}88 & \cellcolor{green!20}91\\
+		\hline
+		Rahul & \cellcolor{red!20}68 & \cellcolor{red!20}74 & \cellcolor{yellow!30}79\\
+		\hline
+		Priya & \cellcolor{green!20}96 & \cellcolor{green!20}94 & \cellcolor{green!20}98\\
+		\hline
+	\end{tabular}
+\end{center}
+
+
+\end{document}

@@ -1,0 +1,191 @@
+\documentclass[12pt,a4paper]{article}
+
+\usepackage{fontspec}
+\usepackage{xcolor}
+\usepackage{geometry}
+\usepackage{setspace}
+\usepackage{parskip}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{makeidx}
+\usepackage{fancyvrb}
+\usepackage{hyperref}
+
+\geometry{
+	top=1in,
+	bottom=1in,
+	left=1in,
+	right=1in
+}
+
+\definecolor{pagebg}{RGB}{245,245,245}
+\definecolor{boxbg}{RGB}{225,225,225}
+
+\pagecolor{pagebg}
+
+\setmainfont{DejaVu Serif}
+\setsansfont{DejaVu Sans}
+\setmonofont{DejaVu Sans Mono}
+
+\makeindex
+
+\renewcommand{\thesection}{\Alph{section}}
+
+\newsavebox{\boxone}
+\newsavebox{\boxtwo}
+\newsavebox{\boxthree}
+
+\begin{document}
+	
+	\section{Fonts and background}
+	
+	This text is written in \textbf{DejaVu Serif}, the main font.
+	
+	\begin{trivlist}
+		\item
+		This text is written in DejaVu Serif, the main font.
+		
+		\item
+		{\sffamily
+			This text is written in DejaVu Sans, the sans-serif font.
+		}
+		
+		\item
+		{\ttfamily
+			This text is written in Courier, the monospace font.
+		}
+	\end{trivlist}
+	
+	\index{background}
+	
+	\section{Spacing}
+	
+	This is the first line of a paragraph.
+	
+	This is another line, but not another paragraph.
+	
+	\vspace{1cm}
+	
+	This paragraph starts 1cm below. Now, observe both the paragraphs
+	given below and how they differ in hyphenation:
+	
+	\begin{quote}
+		This is another paragraph. Incomprehensibilities and
+		antidisestablishmentarianisms are two long words.
+	\end{quote}
+	
+	\begin{sloppypar}
+		This is another paragraph. Incomprehensibilities and
+		antidisestablishmentarianisms are two long words.
+	\end{sloppypar}
+	
+	\index{numbering}
+	
+	\vfill
+	
+	\newpage
+	
+	\section{Numbering}
+	
+	Ensure that all sections are numbered using alphabets.
+	
+	\begin{equation}
+		x^2+y^2=1
+		\label{eq:circle}
+	\end{equation}
+	
+	Equation \ref{eq:circle} denotes a circle.
+	
+	Now add the equation of an ellipse before the equation of the circle.
+	
+	\begin{equation}
+		\frac{x^2}{a^2}+\frac{y^2}{b^2}=1
+		\label{eq:ellipse}
+	\end{equation}
+	
+	\index{numbering}
+	
+	\section{Boxes and Lines}
+	
+	\savebox{\boxone}{
+		\fbox{
+			\parbox{7cm}{
+				This message is written in a savebox.
+			}
+		}
+	}
+	
+	\savebox{\boxtwo}{
+		\fbox{
+			\parbox{7cm}{
+				This message is written in a savebox.
+			}
+		}
+	}
+	
+	\savebox{\boxthree}{
+		\fbox{
+			\parbox{7cm}{
+				This message is written in a savebox.
+			}
+		}
+	}
+	
+	\usebox{\boxone}
+	
+	\vspace{0.5cm}
+	
+	\usebox{\boxtwo}
+	
+	\vspace{0.5cm}
+	
+	\usebox{\boxthree}
+	
+	\vspace{0.7cm}
+	
+	\noindent
+	\fcolorbox{black}{boxbg}{
+		\parbox{5cm}{
+			This message is wrapped in a 5cm paragraph box.
+		}
+	}
+	
+	\vspace{0.5cm}
+	
+	Note that these boxes are used for highlighting and layout design.
+	
+	\index{savebox}
+	
+	\vfill
+	
+	Create an index of some relevant terms from this document.
+	
+	Also add the bibliography \cite{overleafbib} as shown in the
+	following pages.
+	
+	Add the missing entry to the
+	\textit{The Not So Short Introduction to \LaTeX2e}
+	book \cite{latexshort}, in the bib file attached and cite it
+	appropriately.
+	
+	\newpage
+	
+	\printindex
+	
+	\newpage
+	
+	\begin{thebibliography}{9}
+		
+		\bibitem{latexshort}
+		Oetiker, T.
+		\textit{The Not So Short Introduction to \LaTeX2e}.
+		CTAN, 2021.
+		
+		\bibitem{overleafbib}
+		Overleaf.
+		\textit{Bibliography management with bibtex}.
+		Overleaf.
+		
+	\end{thebibliography}
+	
+\end{document}

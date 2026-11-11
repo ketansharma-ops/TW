@@ -1,0 +1,162 @@
+\documentclass[12pt,a4paper]{article}
+
+%--------------- Packages -----------------
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{geometry}
+\usepackage{hyperref}
+\usepackage[table]{xcolor}
+\usepackage{enumitem}
+
+\geometry{margin=1in}
+
+\begin{document}
+	
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	% Header
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
+	\begin{center}
+		{\Large \textbf{MALAVIYA NATIONAL INSTITUTE OF TECHNOLOGY, JAIPUR}}\\[0.2cm]
+		{\large Department of Computer Science and Engineering}\\[0.3cm]
+		{\Large \textbf{B.Tech III Semester Examination}}\\[0.2cm]
+		{\large Course: Introduction to LaTeX}\\[0.5cm]
+	\end{center}
+	
+	\noindent
+	\textbf{Time: 2 Hours} \hfill \textbf{Maximum Marks: 30}
+	
+	\vspace{0.5cm}
+	
+	\noindent
+	\textbf{Student Name:} \rule{6cm}{0.4pt}
+	
+	\vspace{0.3cm}
+	
+	\noindent
+	\textbf{Roll Number:} \rule{5cm}{0.4pt}
+	
+	\hrule
+	\vspace{0.4cm}
+	
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	% Instructions
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
+	\section*{Instructions}
+	
+	\begin{enumerate}
+		\item Attempt all questions.
+		\item Write all answers using LaTeX syntax.
+		\item Figures and tables should have captions.
+		\item Marks are indicated against each question.
+	\end{enumerate}
+	
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	% Section A
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
+	\section*{Section A (10 Marks)}
+	
+	\begin{enumerate}[label=\textbf{Q\arabic*.}]
+		
+		\item Explain the following LaTeX commands with examples. \hfill (4 Marks)
+		
+		\begin{itemize}
+			\item \texttt{\\section}
+			\item \texttt{\\subsection}
+			\item \texttt{\\textbf}
+			\item \texttt{\\emph}
+		\end{itemize}
+		
+		\item Write LaTeX code to create the following equation. \hfill (3 Marks)
+		
+		\[
+		E = mc^2
+		\]
+		
+		\item Create an ordered and unordered list in LaTeX. \hfill (3 Marks)
+		
+	\end{enumerate}
+	
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	% Section B
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
+	\section*{Section B (12 Marks)}
+	
+	\begin{enumerate}[label=\textbf{Q\arabic*.},start=4]
+		
+		\item Create the following table using LaTeX. \hfill (6 Marks)
+		
+		\begin{table}[h]
+			\centering
+			\caption{Student Marks}
+			\begin{tabular}{|c|c|c|}
+				\hline
+				\rowcolor{gray!20}
+				Name & Subject & Marks\\
+				\hline
+				Ketan & DSA & 95\\
+				Rahul & OOP & 90\\
+				Aman & DBMS & 88\\
+				\hline
+			\end{tabular}
+		\end{table}
+		
+		\item Insert an image and give it a caption. \hfill (3 Marks)
+		
+		\begin{figure}[h]
+			\centering
+			\includegraphics[width=0.45\textwidth]{1.jpeg}
+			\caption{Sample Figure}
+			\label{fig:sample}
+		\end{figure}
+		
+		\item Write the difference between \texttt{table} and \texttt{tabular} environments. \hfill (3 Marks)
+		
+	\end{enumerate}
+	
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	% Section C
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
+	\section*{Section C (8 Marks)}
+	
+	\begin{enumerate}[label=\textbf{Q\arabic*.},start=7]
+		
+		\item Create a bibliography using \texttt{thebibliography}. Cite one reference in the text. \hfill (4 Marks)
+		
+		Example citation: Machine learning is widely used \cite{mlbook}.
+		
+		\begin{thebibliography}{99}
+			
+			\bibitem{mlbook}
+			Tom Mitchell,
+			\textit{Machine Learning},
+			McGraw Hill, 1997.
+			
+		\end{thebibliography}
+		
+		\item Write LaTeX code for the following mathematical expression. \hfill (4 Marks)
+		
+		\[
+		\int_0^1 x^2\,dx = \frac{1}{3}
+		\]
+		
+	\end{enumerate}
+	
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	% Footer
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
+	\vfill
+	\hrule
+	
+	\begin{center}
+		\textbf{--- End of Question Paper ---}
+	\end{center}
+	
+\end{document}
