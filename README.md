@@ -1,6 +1,6 @@
-# Technical Writing — Personal Learning Repository
+# Technical Writing Repository
 
-This is my personal repository of coursework, class notes, practical exercises and reference material related to Technical Writing. It is not an official course repository.
+This is my personal repository of coursework, class notes, practical exercises and reference material related to Technical Writing.
 
 ## Repository contents
 
@@ -13,8 +13,8 @@ This is my personal repository of coursework, class notes, practical exercises a
 | `Documentation/` | Topic-wise learning notes |
 
 ## Topics
+- LaTex
 - Git and GitHub
-- LaTeX
 - Doxygen
 - Google Docs
 
@@ -26,7 +26,3 @@ This is my personal repository of coursework, class notes, practical exercises a
 - [Google Docs](Documentation/Google-Docs.md)
 - [Assignments](Documentation/Assignments.md)
 - [References](Documentation/References.md)
-
-The notes focus on concepts studied in class, questions I should be able to answer, relevant syntax, and practical applications.
-
-Maintained as a personal learning and practice repository.
