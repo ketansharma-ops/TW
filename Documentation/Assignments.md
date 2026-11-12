@@ -1,6 +1,6 @@
 # Practical Assignments
 
-This document records practical topics associated with the course. It describes concepts and exercises; it does not claim that every listed exercise has been completed.
+This document records practical topics associated with the course. It describes concepts and exercises; 
 
 ## 1. LaTeX Assignments
 
