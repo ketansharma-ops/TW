@@ -1,18 +1,41 @@
-<h1 align="center">Technical Writing Repository </h1>
+
+<h1 align="center">Technical Writing Repository</h1>
 
 This repository brings together my **Technical Writing (TW) coursework and learning process**. It is organised to make it easy to move between topic-wise notes, lecture material, lab assignments, personal practice, and reference resources.
 
 ## What you will find here
 
-| 📘 Learning documentation | 🧪 Lab assignments |
-|---|---|
-| Topic-wise notes written around concepts, questions, examples, commands, and takeaways. | Practical coursework, source files, generated documents, and assignment outputs. |
-| [Explore documentation →](Documentation/README.md) | [Browse lab assignments →](Lab%20Assignments/) |
+<table width="100%" style="table-layout: fixed;">
+  <tr>
+    <th width="50%">📘 Learning documentation</th>
+    <th width="50%">🧪 Lab assignments</th>
+  </tr>
+  <tr>
+    <td>Topic-wise notes written around concepts, questions, examples, commands, and takeaways.</td>
+    <td>Practical coursework, source files, generated documents, and assignment outputs.</td>
+  </tr>
+  <tr>
+    <td><a href="Documentation/README.md">Explore documentation →</a></td>
+    <td><a href="Lab%20Assignments/">Browse lab assignments →</a></td>
+  </tr>
+</table>
 
-| 🖥️ Lecture slides | ⚙️ Personal practice |
-|---|---|
-| Course-provided slides and material used while learning each topic. | Experiments, exercises, and additional work completed while practising concepts. |
-| [Browse lecture slides →](Lecture%20Slides/) | [Explore practice work →](My%20Practice/) |
+<br>
+
+<table width="100%" style="table-layout: fixed;">
+  <tr>
+    <th width="50%">🖥️ Lecture slides</th>
+    <th width="50%">⚙️ Personal practice</th>
+  </tr>
+  <tr>
+    <td>Course-provided slides and material used while learning each topic.</td>
+    <td>Experiments, exercises, and additional work completed while practising concepts.</td>
+  </tr>
+  <tr>
+    <td><a href="Lecture%20Slides/">Browse lecture slides →</a></td>
+    <td><a href="My%20Practice/">Explore practice work →</a></td>
+  </tr>
+</table>
 
 ## Topics covered
 
